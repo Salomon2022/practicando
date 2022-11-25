@@ -1,0 +1,51 @@
+CREATE DATABASE Peru;
+USE Peru_team;
+
+CREATE TABLE Plantel (
+IdPlantel INT NOT NULL AUTO_INCREMENT,
+Nombre VARCHAR(20) NOT NULL,
+Apellido VARCHAR(20)NOT NULL,
+Fecha_Nacimiento DATE NOT NULL,
+Edad INT(20)NOT NULL,
+Posicion VARCHAR(20)NOT NULL,
+Equipo VARCHAR(20)NOT NULL,
+PRIMARY KEY (IdPlantel)
+)
+ENGINE=InnoDB;
+
+CREATE TABLE Comando_Tecnico (
+IdComando_Tecnico INT NOT NULL AUTO_INCREMENT,
+Nombre VARCHAR(20) NOT NULL,
+Apellido VARCHAR(20)NOT NULL,
+Fecha_Nacimiento DATE NOT NULL,
+Edad INT(20)NOT NULL,Nombre VARCHAR(20) NOT NULL,
+Equipo VARCHAR(20)NOT NULL,
+PRIMARY KEY (IdPlantel)
+)
+ENGINE=InnoDB;
+
+INSERT INTO Plantel (Nombre, Apellido, Fecha_Nacimiento, Edad, Posicion, Equipo)
+VALUE 
+('Salomon', 'Rengifo', '1995-08-08','27','Delantero','Atletico de Madrid'),
+('José', 'Carvallo', '1994-08-08','28','Arquero','Alianza Lima'),
+('Pedro ', 'Gallese', '1993-08-08','29','Arquero','Galaxy USA'),
+('Carlos', 'Zambrano', '1995-08-08','27','Delantero','Atletico de Madrid'),
+('Aldo', 'Corzo', '1995-08-08','27','Delantero','Atletico de Madrid'),
+('Alexander Callens', 'Rengifo', '1995-08-08','27','Delantero','Atletico de Madrid'),
+('Marcos', 'López', '1995-08-08','27','Delantero','Atletico de Madrid'),
+('Miguel', 'Trauco', '1995-08-08','27','Delantero','Atletico de Madrid'),
+('Christian', 'Ramos', '1995-08-08','27','Delantero','Atletico de Madrid'),
+('Luis', 'Advíncula', '1995-08-08','27','Delantero','Atletico de Madrid');
+
+
+INSERT INTO Comando_Tecnico (Nombre, Apellido, Edad, Ocupacion , Equipo)
+VALUE 
+('Juan', 'Reynoso', '40','Director Técnico','Argentina'),
+('Joaquin', 'Velasques', '40','Director Técnico','Argentina'),
+('Gustavo', 'Leonbruno','40','Preparador físico','Argentina'),
+('Jaime', 'Serna', '40','Director Técnico','Argentina'),
+('Luis', 'Orozco','40','Director Técnico','Argentina'),
+('Néstor', 'Ibarra', '40','Director Técnico','Argentina'),
+('Oscar', 'Gambeta', '40','Director Técnico','Argentina');
+
+
